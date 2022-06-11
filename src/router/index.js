@@ -18,6 +18,13 @@ const routes = [
                 },
                 component: () => import ( /* webpackChunkName: "dashboard" */ "../views/Dashboard.vue")
             }, {
+                path: "/userMange",
+                name: "userMange",
+                meta: {
+                    title: '用户管理'
+                },
+                component: () => import (/* webpackChunkName: "UserMange" */ "../views/UserMange.vue")
+            }, {
                 path: "/table",
                 name: "basetable",
                 meta: {
