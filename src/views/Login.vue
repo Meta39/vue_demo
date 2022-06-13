@@ -32,7 +32,7 @@ import { ref, reactive } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import { ElMessage } from "element-plus";
-import { hello } from "../api/index";
+import { hello } from "../api/http";
 
 export default {
     setup() {
@@ -56,7 +56,7 @@ export default {
         };
         const login = ref(null);
         const submitForm = async () => {
-            const res = await hello(1);
+            const res = await hello();
             console.log('res>>>', res)
             login.value.validate((valid) => {
                 if (valid) {

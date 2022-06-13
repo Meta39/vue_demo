@@ -9,7 +9,7 @@ const service = axios.create({
 
 service.interceptors.request.use(
     config => {
-        config.headers.token = "f5369e3f-17d3-4dd1-8772-6062252598cf";
+        config.headers.token = "0a63a748-b561-42f1-8978-de7e10051ddf";
         return config;
     },
     error => {
@@ -21,7 +21,6 @@ service.interceptors.request.use(
 service.interceptors.response.use(
     response => {
         if (response.status === 200) {
-            console.log("我进来了",response.data);
             return response.data;
         } else {
             Promise.reject();

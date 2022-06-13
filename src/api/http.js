@@ -7,12 +7,9 @@ export const fetchData = query => {
         params: query
     });
 };
-export const hello = (id) => {
+export const hello = () => {
     return request({
-        url: '/api/user/select',
+        url: '/api/hello',
         method: 'get',
-        params: {
-            id
-        }
     });
 };

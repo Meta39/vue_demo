@@ -1,0 +1,38 @@
+/* 查询 */
+.search {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: auto;
+    padding: 10px;
+}
+.search_son {
+    display: flex;
+}
+.el-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 12px;
+}
+.search_son_span{
+    padding: 10px;
+    min-width: 80px;
+}
+
+/* 内容 */
+.content2{
+    position: relative;
+    display: flex;  
+    width: auto;
+    height: 100%;
+}
+
+/* 分页 */
+.pageHelper {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    bottom: 0;
+    width: auto;
+    padding: 10px;
+}
